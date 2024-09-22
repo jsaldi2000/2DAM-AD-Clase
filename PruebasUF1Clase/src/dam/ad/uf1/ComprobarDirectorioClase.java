@@ -10,7 +10,7 @@ public class ComprobarDirectorioClase {
 		
 		//Verificamos si el fichero o el directorio existe.	.
 		if (file.exists()) {
-			System.out.println("El fichero o directorio ya existe/");
+			System.out.println("El fichero o directorio ya existe//");
 			
 			//Verificar si es un directorio o es un fichero
 			if (file.isDirectory()) {
