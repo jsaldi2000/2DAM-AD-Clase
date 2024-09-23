@@ -1,1 +1,3 @@
-Hola me llamo Jorge, etc.
+Axel León, 21525425, axel@loquesea.com, 20/01/2000
+Alejandro Ramírez, 21525425, alejandro.ramirez@loquesea.com, 20/01/2000
+Clara Nuevo, 21525425, clara.nuev.mota@loquesea.com, 20/01/2000
