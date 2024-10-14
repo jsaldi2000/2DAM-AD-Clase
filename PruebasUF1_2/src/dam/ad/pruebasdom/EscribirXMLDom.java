@@ -43,7 +43,17 @@ public class EscribirXMLDom {
 			elementoEmpleado1.appendChild(elementoId1);
 			elementoId1.appendChild(textoId1);
 			
-			// AQUI VAMOS A SEGUIR AÑADIENDO ELEMENTOS
+			Element elementoNombre1 = doc.createElement("nombre");
+			Text textoNombre1 = doc.createTextNode("Axel");
+			elementoEmpleado1.appendChild(elementoNombre1);
+			elementoNombre1.appendChild(textoNombre1);
+			
+			Element elementoApellido1 = doc.createElement("apellido");
+			Text textoApellido1 = doc.createTextNode("León");
+			elementoEmpleado1.appendChild(elementoApellido1);
+			elementoApellido1.appendChild(textoApellido1);
+			
+			// SEGUIMOS AÑADIENDO ELEMENTOS
 			
 			
 			

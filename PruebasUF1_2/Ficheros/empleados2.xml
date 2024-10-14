@@ -2,5 +2,18 @@
 <empleados>
     <empleado>
         <id>1</id>
+        <nombre>Axel</nombre>
+        <apellido>León</apellido>
+        <email>miemail@email.com</email>
+        <mascota>
+			<nombre>Tor</nombre>
+			<tipo>Perro</tipo>
+		</mascota>
     </empleado>
+    <empleado>
+		<id>2</id>
+        <nombre>Pedro</nombre>
+        <apellido>Ruano</apellido>
+        <email>miemail2@email.com</email>
+	</empleado>
 </empleados>

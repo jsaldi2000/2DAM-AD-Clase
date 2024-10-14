@@ -19,7 +19,7 @@ public class LeerXMLDom {
 		DocumentBuilder builder = factory.newDocumentBuilder();
 		
 		// Leer el archivo XML
-		Document doc = builder.parse(new File("Ficheros/empleados.xml"));
+		Document doc = builder.parse(new File("Ficheros/listaempleados.xml"));
 		
 		// Normalizar el archivo XML (eliminar espacios y tabuladores que no se necesiten)
 		doc.getDocumentElement().normalize();
@@ -38,9 +38,9 @@ public class LeerXMLDom {
 				Element elemento = (Element) empleado;
 				
 				// Obtengo los valores de cada campo del elemento empleado
-				String id = elemento.getElementsByTagName("id").item(0).getTextContent();
-				String nombre = elemento.getElementsByTagName("nombre").item(0).getTextContent();
-				String apellido = elemento.getElementsByTagName("apellido").item(0).getTextContent();
+				String id = elemento.getElementsByTagName("id").item(0).getTextContent().trim();
+				String nombre = elemento.getElementsByTagName("nombre").item(0).getTextContent().trim();
+				String apellido = elemento.getElementsByTagName("apellido").item(0).getTextContent().trim();
 				
 				// Imprimir los datos de elemento empledo
 				System.out.println("Empleado ID: " + id);

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<empleados>
+    <empleado>
+        <id>1</id>
+        <nombre>Juan</nombre>
+        <apellido>Coloma</apellido>
+    </empleado>
+    <empleado>
+        <id>2</id>
+        <nombre>Ávaro</nombre>
+        <apellido>Sordo</apellido>
+    </empleado>
+    <empleado>
+        <id>3</id>
+        <nombre>Andrea</nombre>
+        <apellido>García</apellido>
+    </empleado>
+    <empleado>
+        <id>4</id>
+        <nombre>Javier</nombre>
+        <apellido>Ochando</apellido>
+    </empleado>
+    <empleado>
+        <id>5</id>
+        <nombre>Jaime</nombre>
+        <apellido>Ferrer</apellido>
+    </empleado>
+</empleados>
