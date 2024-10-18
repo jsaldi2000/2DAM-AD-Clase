@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Empleados>
+    <empleado>
+        <id>1</id>
+        <nombre>Carlos</nombre>
+        <apellido>Gómez</apellido>
+        <direccion>
+            <calle>calle Mayor</calle>
+            <ciudad>Madrid</ciudad>
+            <provincia>Madrid</provincia>
+            <codigoPostal>28028</codigoPostal>
+        </direccion>
+    </empleado>
+    <empleado>
+        <id>2</id>
+        <nombre>María</nombre>
+        <apellido>Martínez</apellido>
+        <direccion>
+            <calle>calle X</calle>
+            <ciudad>Burgos</ciudad>
+            <provincia>Burgos</provincia>
+            <codigoPostal>09004</codigoPostal>
+        </direccion>
+    </empleado>
+    <empleado>
+        <id>3</id>
+        <nombre>Manuel</nombre>
+        <apellido>Fernández</apellido>
+        <direccion>
+            <calle>Pasep del prado</calle>
+            <ciudad>Madrid</ciudad>
+            <provincia>Madrid</provincia>
+            <codigoPostal>28028</codigoPostal>
+        </direccion>
+    </empleado>
+    <empleado>
+        <id>4</id>
+        <nombre>Raquel</nombre>
+        <apellido>López</apellido>
+        <direccion>
+            <calle>Gran Vía</calle>
+            <ciudad>Barcelona</ciudad>
+            <provincia>Barcelona</provincia>
+            <codigoPostal>08001</codigoPostal>
+        </direccion>
+    </empleado>
+    <empleado>
+        <id>5</id>
+        <nombre>Alba</nombre>
+        <apellido>Torres</apellido>
+        <direccion>
+            <calle>calle Real</calle>
+            <ciudad>Zaragoza</ciudad>
+            <provincia>Aragón</provincia>
+            <codigoPostal>50001</codigoPostal>
+        </direccion>
+    </empleado>
+</Empleados>

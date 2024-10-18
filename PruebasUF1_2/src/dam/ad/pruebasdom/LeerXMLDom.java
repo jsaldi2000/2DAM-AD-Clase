@@ -19,7 +19,7 @@ public class LeerXMLDom {
 		DocumentBuilder builder = factory.newDocumentBuilder();
 		
 		// Leer el archivo XML
-		Document doc = builder.parse(new File("Ficheros/listaempleados.xml"));
+		Document doc = builder.parse(new File("Ficheros/empleados.xml"));
 		
 		// Normalizar el archivo XML (eliminar espacios y tabuladores que no se necesiten)
 		doc.getDocumentElement().normalize();
