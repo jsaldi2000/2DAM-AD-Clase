@@ -1,0 +1,22 @@
+<ListaObjetos>
+  <Objeto>
+    <nombre>Objeto1</nombre>
+    <valor>100</valor>
+  </Objeto>
+  <Objeto>
+    <nombre>Objeto2</nombre>
+    <valor>200</valor>
+  </Objeto>
+  <Objeto>
+    <nombre>Objeto3</nombre>
+    <valor>300</valor>
+  </Objeto>
+  <Objeto>
+    <nombre>Objeto4</nombre>
+    <valor>400</valor>
+  </Objeto>
+  <Objeto>
+    <nombre>Objeto5</nombre>
+    <valor>500</valor>
+  </Objeto>
+</ListaObjetos>
