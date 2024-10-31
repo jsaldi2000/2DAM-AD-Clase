@@ -1,0 +1,5 @@
+Lewis Hamilton;Mercedes;109.82
+Max Verstappen;Red Bull;111.27
+Sebastian Vettel;Aston Martin;113.45
+Charles Leclerc;Ferrari;110.98
+Daniel Ricciardo;McLaren;112.15

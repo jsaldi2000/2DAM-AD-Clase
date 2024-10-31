@@ -1,0 +1,14 @@
+<Actividades>
+  <actividad>
+    <id>1</id>
+    <nombreActividad>Rápidos</nombreActividad>
+    <zona>Oeste</zona>
+    <duracion>120</duracion>
+  </actividad>
+  <actividad>
+    <id>2</id>
+    <nombreActividad>Volleyball</nombreActividad>
+    <zona>Este</zona>
+    <duracion>60</duracion>
+  </actividad>
+</Actividades>
