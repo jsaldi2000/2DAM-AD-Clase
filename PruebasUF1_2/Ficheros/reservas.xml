@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Reservas>
+    <reserva>
+        <id>1</id>
+        <cliente>Andrés</cliente>
+        <origen>MAD</origen>
+        <destino>BAR</destino>
+        <fechaVuelo>30/11/2024</fechaVuelo>
+    </reserva>
+    <reserva>
+        <id>2</id>
+        <cliente>Marta</cliente>
+        <origen>ALI</origen>
+        <destino>MAL</destino>
+        <fechaVuelo>28/11/2024</fechaVuelo>
+    </reserva>
+</Reservas>
