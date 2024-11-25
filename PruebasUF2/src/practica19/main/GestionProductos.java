@@ -48,7 +48,9 @@ public class GestionProductos {
 			break;
 		case "6": consultaProductosPesoMayorQue();
 			break;
-		default:
+		case "S": System.out.println("Aplicación cerrada");
+			break;		
+		default: System.out.println("No se ha seleccionado una opción correcta");
 			break;
 		}
 		
