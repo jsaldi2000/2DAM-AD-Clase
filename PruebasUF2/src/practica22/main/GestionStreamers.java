@@ -53,7 +53,7 @@ public class GestionStreamers {
 
     private static void insertaStreamerYSesion() {
         System.out.print("Nombre del Streamer: ");
-        String nombre = sc.nextLine().toLowerCase().trim(); // Normalizar a minúsculas
+        String nombre = sc.nextLine();
 
         // Busca el streamer por nombre en la base de datos
         ObjectSet<Streamer> resultados = accesoDB.buscarStreamerPorNombre(nombre);

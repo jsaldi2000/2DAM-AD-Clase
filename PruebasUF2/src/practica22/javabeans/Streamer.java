@@ -14,7 +14,7 @@ public class Streamer implements Serializable {
     private String categoria;
     private int seguidores;
     private int suscriptores;
-    private List<Sesion> sesiones; // Atributo compuesto
+    private List<Sesion> sesiones;
 
     // Constructor vacío
     public Streamer() {
@@ -23,7 +23,7 @@ public class Streamer implements Serializable {
 
     public Streamer(int id, String nombre, String plataforma, String categoria, int seguidores, int suscriptores, List<Sesion> sesiones) {
         this.id = id;
-        this.nombre = nombre.toLowerCase(); // Normalizar a minúsculas
+        this.nombre = nombre;
         this.plataforma = plataforma;
         this.categoria = categoria;
         this.seguidores = seguidores;
@@ -46,7 +46,7 @@ public class Streamer implements Serializable {
     }
 
     public void setNombre(String nombre) {
-        this.nombre = nombre.toLowerCase(); // Normalizar a minúsculas
+        this.nombre = nombre;
     }
 
     public String getPlataforma() {

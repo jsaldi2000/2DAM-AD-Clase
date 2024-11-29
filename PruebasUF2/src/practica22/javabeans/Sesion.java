@@ -44,10 +44,6 @@ public class Sesion implements Serializable {
 
     @Override
     public String toString() {
-        return "Sesion{" +
-                "fecha='" + fecha + '\'' +
-                ", duracion=" + duracion +
-                ", espectadores=" + espectadores +
-                '}';
+        return "Sesion{" + "fecha='" + fecha + '\'' + ", duracion=" + duracion + ", espectadores=" + espectadores + '}';
     }
 }
