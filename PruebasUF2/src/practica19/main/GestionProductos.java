@@ -30,6 +30,8 @@ public class GestionProductos {
 		System.out.println("CONSULTAS AVANZADAS");
 		System.out.println("-----------------------------------");
 		System.out.println("6. Consultar productos con peso mayor que...");
+		System.out.println("7. Ajustar precios de productos dentro de un rango");
+		System.out.println("8. Calcular precios con IVA por país");
 		System.out.println("S. Salir");
 		System.out.println();
 		System.out.println("Elige una opción: ");
@@ -48,6 +50,10 @@ public class GestionProductos {
 			break;
 		case "6": consultaProductosPesoMayorQue();
 			break;
+		case "7": ajustaPrecios();
+			break;
+		case "8": calculaPreciosConIVA();
+			break;
 		case "S": System.out.println("Aplicación cerrada");
 			break;		
 		default: System.out.println("No se ha seleccionado una opción correcta");
@@ -57,6 +63,30 @@ public class GestionProductos {
 		accesoDB.cerrarDB();
 		sc.close();
 
+	}
+
+	//8. calcular el iva de los productos por país
+	private static void calculaPreciosConIVA() {
+		System.out.println("introduce el nombre del país: ");
+		String pais = sc.nextLine();
+		System.out.println("Introduce la tasa de IVA para " + pais +": ");
+		double iva = Double.parseDouble(sc.nextLine());
+		
+		accesoDB.calcularPreciosConIVA(pais, iva);
+		
+	}
+
+	//7. ajustar precio de productos dentro de un rango
+	private static void ajustaPrecios() {
+		System.out.println("Introduce el precio mínimo: ");
+		double precioMin = Double.parseDouble(sc.nextLine());
+		System.out.println("Introduce el precio máximo: ");
+		double precioMax = Double.parseDouble(sc.nextLine());
+		System.out.println("introduce el porcentaje de ajuste");
+		double porcentajeAjuste = Double.parseDouble(sc.nextLine());
+		
+		accesoDB.ajustarPrecios(precioMin, precioMax, porcentajeAjuste);
+		
 	}
 
 	//6. Consultar productos coincidentes con peso introducido por usuario mayor que X

@@ -101,8 +101,60 @@ public class AccesoProductosDB {
 		// Retorno el ObjectSet devuelto por la query
 		return query.execute();
 	}
-	
-	
-	
+
+	// Método para ajustar el precio de productos dentro de un rango
+	public void ajustarPrecios(double precioMin, double precioMax, double porcentajeAjuste) {
+
+
+		// Creo una query
+		Query query = db.query();
+		query.constrain(Producto.class);
+		query.descend("precio").constrain(precioMin).greater();
+		query.descend("precio").constrain(precioMax).smaller();
+		
+		// Obtener ObjectSet
+		ObjectSet<Producto> productos = query.execute();
+		
+		// Verificar si hay productos que cumplen con la consulta
+		if (!productos.hasNext()) {
+			System.err.println("No se encontraron productos en el rango de precios");
+			return;
+		}
+		
+		// Ajusto los precios con el nuevo ajuste de porcentaje
+		for (Producto producto : productos) {
+			double nuevoPrecio = producto.getPrecio() * (1 + porcentajeAjuste /100);
+			producto.setPrecio(nuevoPrecio);
+			db.store(producto);
+			System.out.printf("Producto actualizado: %s, Nuevo Precio: %.2f € \n", producto.getNombre(), nuevoPrecio);
+		}
+		db.commit();
+		
+	}
+
+	// Nétodo para calcula precios con IVA por país
+	public void calcularPreciosConIVA(String pais, double iva) {
+		
+		ObjectSet<Producto> productos = db.queryByExample(Producto.class);
+		
+		if (!productos.hasNext()) {
+			System.out.println("No hay productos en la bbdd");
+			return;
+		}
+		
+		System.out.printf("Precios con IVA para %s (IVA: %.2f%%", pais, iva);
+		System.out.printf("------------------------------------------------------");
+		
+		for (Producto producto : productos) {
+			double precionConIVA = producto.getPrecio() * (1 + iva / 100);
+			System.out.printf("Producto %s | Precio sin IVA: %.2f € | Precio con IVA: %.2f @ \n",
+					producto.getNombre(),
+					producto.getPrecio(),
+					precionConIVA);
+		}
+		
+		System.out.printf("------------------------------------------------------");
+		
+	}
 	
 }
